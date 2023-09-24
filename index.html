@@ -28,14 +28,6 @@
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
     <!-- header-start -->
     <header>
         <div class="header-area">
@@ -56,11 +48,13 @@
                                         <li><a class="active" href="#inicio">Início</a></li>
                                         <li><a href="#tema">Tema</a></li>
                                         <li><a href="#criterios">Critérios</a></li>
-                                        <li><a href="#programacao">Programação</a></li>
                                         <li>
                                             <a href="#edicoesAnteriores">Edições anteriores</a>
                                         </li>
+                                        <li><a href="#programacao">Programação</a></li>
+                                        <li><a href="#premios">Prêmios</a></li>
                                         <li><a href="#faq">FAQ</a></li>
+                                        <li><a href="#apoio">Apoio</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -164,7 +158,7 @@
     </div>
     <!--/ about_me  -->
 
-    <!-- service_area  -->
+    <!-- critérios  -->
     <div class="service_area" id="criterios">
         <div class="container">
             <div class="row">
@@ -178,51 +172,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/1.svg" alt="" />
-                        </div>
-                        <h3>Criatividade</h3>
-                        <p>
-                            É uma solução original? Repensa, de forma diferente, algo
-                            existente?
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/2.svg" alt="" />
-                        </div>
-                        <h3>Web design</h3>
-                        <p>
-                            A solução possui uma boa interface? Tem uma boa experiência de
-                            usuário (UX)?
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/3.svg" alt="" />
-                        </div>
-                        <h3>Impacto</h3>
-                        <p>A ideia é escalável? Pode ser aplicada ao mundo real?</p>
-                        <br>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/1.svg" alt="" />
-                        </div>
-                        <h3>Funcionalidade</h3>
-                        <p>A aplicação pode ser usada em um exemplo bem definido?</p>
-                        <br>
-                    </div>
-                </div>
+            <div id="criterios-card" class="row">
+                <!-- Aqui os cards serão adicionados pelo JavaScript -->
             </div>
         </div>
     </div>
@@ -342,28 +293,67 @@
         </div>
     </div>
     <!--/ programação -->
-    <!-- perguntas  -->
-    <section class="service_area faq" id="faq">
+
+    <!--premios-->
+    <!-- <section> -->
+    <div class="service_area" id="premios">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title text-center mb-65">
+                        <h3>
+                            Prêmios <br />
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div id="premios-card" class="row">
+                <!-- Aqui os cards serão adicionados pelo JavaScript -->
+            </div>
+        </div>
+    </div>
+    <!-- </section> -->
+
+    <!--premios end-->
+    <!-- perguntas  -->
+    <section style="background-color: red" class="portfolio_area portfolio_bg_1 faq" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title white_text text-center">
                         <h3>FAQ</h3>
 
                         <div class="row">
                             <div class="col-xl-12 col-lg-12">
                                 <div class="accordion" id="accordionExample">
-                                    <div class="row" id="accordion-content"></div>
-                           
-                                    </div>  
+                                    <div class="row" id="accordion-content">
+                                        <!-- Aqui os cards serão adicionados pelo JavaScript -->
+                                    </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row"></div>
         </div>
     </section>
+
+    <div class="service_area" id="apoio">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-65">
+                        <h3>
+                            Apoio <br />
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="premios-card" class="row">
+                 Aqui os cards serão adicionados pelo JavaScript
+            </div> -->
+        </div>
+    </div>
 
     <!-- perguntas  -->
 
@@ -511,6 +501,8 @@
     <script src="js/main.js"></script>
 
     <script src="js/faqItems.js"></script>
+    <script src="js/cardCriterios.js"></script>
+    <script src="js/cardPremios.js"></script>
 
 </body>
 

@@ -57,6 +57,7 @@ ul {
 .faq .accordion .card {
   border: none;
   margin-bottom: 30px;
+  border-radius: 30px;
 }
 
 .faq .accordion .card:not(:first-of-type) .card-header:first-child {
@@ -3217,6 +3218,16 @@ h3 {
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 0;
+  min-height: 120px;
+}
+
+.service_area .premio p {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 0;
+  min-height: 50px;
 }
 
 /* line 38, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_service.scss */
