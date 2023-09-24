@@ -28,9 +28,20 @@ ul {
   padding: 0;
   list-style: none;
 }
+
 .faq {
   min-height: 100vh;
 }
+
+#navigation a.active {
+  background-color: #5A0089; 
+  color: #fff; 
+  font-weight: bold; 
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 
 @media (max-width: 767px) {
   .faq {
