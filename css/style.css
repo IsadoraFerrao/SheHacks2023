@@ -544,7 +544,6 @@ h3 {
   border-radius: 0px;
   text-align: center;
   color: #fff !important;
-  text-transform: capitalize;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -899,17 +898,18 @@ h3 {
   right: 0;
   margin: auto;
   top: 11px;
+  font-family: "Muli", sans-serif;
 }
 
 /* line 28, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #5DB2FF;
+  color: #615CFD;
 }
 
 /* line 32, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a.active {
-  color: #5DB2FF;
+  color: #615CFD;
 }
 
 @media (max-width: 767px) {
@@ -940,6 +940,8 @@ h3 {
   top: -36px;
 }
 
+
+
 /* line 55, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav .slicknav_btn .slicknav_icon {
   margin-right: 6px;
@@ -949,6 +951,10 @@ h3 {
   top: -11px;
   right: -5px;
 }
+
+/* .slicknav_menu .slicknav_icon::before {
+  background-color: red;
+} */
 
 @media (max-width: 767px) {
   /* line 12, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
