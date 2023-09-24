@@ -29,6 +29,7 @@ ul {
 
 .faq {
   min-height: 100vh;
+  padding-bottom: 40px;
 }
 
 #navigation a.active {
@@ -43,7 +44,7 @@ ul {
 
 @media (max-width: 767px) {
   .faq {
-    width:350px; 
+    /* width:350px;  */
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -886,6 +887,9 @@ h3 {
     width: 100%;
     z-index: 9;
   }
+  /* .slicknav_menu .slicknav_nav a.hover{
+ 
+  } */
 }
 
 /* line 13, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
@@ -896,14 +900,17 @@ h3 {
   padding: 0;
   width: 95%;
   padding: 0;
-  border-radius: 0px;
+  border-radius: 10px;
   margin-top: 5px;
   position: absolute;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: 10px;
   top: 11px;
   font-family: "Muli", sans-serif;
+  /* border-width: 2px;
+  border-style: solid; */
+  background-color: rgb(236, 154, 236);
 }
 
 /* line 28, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
@@ -913,9 +920,9 @@ h3 {
 }
 
 /* line 32, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
-.slicknav_menu .slicknav_nav a.active {
+/* .slicknav_menu .slicknav_nav a.active {
   color: #615CFD;
-}
+} */
 
 @media (max-width: 767px) {
   /* line 35, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
@@ -2731,7 +2738,7 @@ h3 {
 /* line 45, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_bradcam.scss */
 .bradcam_area p {
   font-size: 18px;
-  color: #fff;
+  color: #444;
   font-weight: 400;
   text-transform: capitalize;
 }

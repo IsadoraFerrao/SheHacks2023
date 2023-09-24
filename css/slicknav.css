@@ -210,10 +210,12 @@
 }
 
 .slicknav_nav a {
-    font-size: 14px;
-    font-weight: 400;
-    color: #000;
-    text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 6px;
 }
 
 .slicknav_nav .slicknav_arrow {
