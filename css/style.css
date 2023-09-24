@@ -16,9 +16,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #ff008b;
 }
-section {
-  padding: 60px;
-}
+
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   outline: none;
@@ -414,11 +412,6 @@ h3 {
   opacity: 1;
 }
 
-/* line 210, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
-.section-padding {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 
 /* line 214, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 .pt-120 {
@@ -2245,7 +2238,7 @@ h3 {
 .about_me .about_large_title {
   font-weight: 800;
   color: #F5F6F7;
-  font-size: 220px;
+  font-size: 210px;
   position: absolute;
   left: 21%;
   top: 0;
@@ -3168,9 +3161,13 @@ h3 {
   margin-top: 12px;
 }
 
+.section-padding {
+  padding-top: 120px;
+}
+
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_service.scss */
 .service_area {
-  padding-top: 120px;
+  /* padding-top: 120px; */
   padding-bottom: 120px;
 }
 
@@ -3340,7 +3337,7 @@ h3 {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 180px;
+  /* padding-top: 180px; */
   padding-bottom: 340px;
 }
 
