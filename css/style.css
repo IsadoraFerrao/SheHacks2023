@@ -32,6 +32,20 @@ ul {
   min-height: 100vh;
 }
 
+@media (max-width: 767px) {
+  .faq {
+    width:350px; 
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-body {
+   text-align: left;
+  }
+}
+
 .faq .section-title {
   margin-bottom: 54px;
 }
