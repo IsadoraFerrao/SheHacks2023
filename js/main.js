@@ -27,6 +27,13 @@ if(menu.length){
 		openedSymbol:'-'
 	});
 };
+
+// fechar menu
+$(document).on('click', 'ul.slicknav_nav li a', function () {
+  menu.slicknav('close');
+});
+
+
 // blog-menu
   // $('ul#blog-menu').slicknav({
   //   prependTo: ".blog_menu"

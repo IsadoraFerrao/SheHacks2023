@@ -13,6 +13,143 @@ body {
   font-style: normal;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #ff008b;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq {
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+#navigation a.active {
+  background-color: #5A0089; 
+  color: #fff; 
+  font-weight: bold; 
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+@media (max-width: 767px) {
+  .faq {
+    /* width:350px;  */
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-body {
+   text-align: left;
+  }
+}
+
+.faq .section-title {
+  margin-bottom: 54px;
+}
+
+.faq .section-title h2 {
+  margin-bottom: 22px;
+}
+
+.faq .accordion .card {
+  border: none;
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+
+.faq .accordion .card:not(:first-of-type) .card-header:first-child {
+  border-radius: 10px;
+}
+
+.faq .accordion .card .card-header {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.faq .accordion .card .card-header h5 {
+  padding: 0;
+}
+
+.faq .accordion .card .card-header h5 button {
+  color: #1e3056;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0 30px 0 70px;
+  height: 80px;
+  display: block;
+  width: 100%;
+  color: rgba(30, 48, 86, 0.8);
+  text-align: left;
+  background: #fff;
+  -webkit-box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
+  box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+.faq .accordion .card .card-header h5 button:after {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  color: #ff5f74;
+  text-align: center;
+  border: 1px solid #615CFD;
+  border-radius: 50%;
+  line-height: 100%;
+  content: '';
+  font-size: 10px;
+  line-height: 18px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.faq .accordion .card .card-header h5 button.collapsed {
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid rgba(97, 125, 255, 0.2);
+}
+
+.faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
+  content: '';
+  color: #121212;
+  background-color: #615CFD;
+  /* background-image: -webkit-linear-gradient(-180deg, #5e7eff 0%, #ff5f74 30%, #a85fff 100%); */
+}
+
+.faq .accordion .card .card-body {
+  -webkit-box-shadow: 0px 15px 140px 0px rgba(69, 81, 100, 0.1);
+  box-shadow: 0px 15px 140px 0px rgba(69, 81, 100, 0.1);
+  border-radius: 0 0 10px 10px;
+  padding-top: 0;
+  margin-top: -6px;
+  padding-left: 72px;
+  padding-right: 70px;
+  padding-bottom: 23px;
+  color: rgba(30, 48, 86, 0.8);
+  line-height: 30px;
+}
+
 /* line 12, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 .img {
   max-width: 100%;
@@ -276,11 +413,6 @@ h3 {
   opacity: 1;
 }
 
-/* line 210, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
-.section-padding {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 
 /* line 214, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 .pt-120 {
@@ -418,7 +550,6 @@ h3 {
   border-radius: 0px;
   text-align: center;
   color: #fff !important;
-  text-transform: capitalize;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -756,6 +887,9 @@ h3 {
     width: 100%;
     z-index: 9;
   }
+  /* .slicknav_menu .slicknav_nav a.hover{
+ 
+  } */
 }
 
 /* line 13, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
@@ -766,25 +900,29 @@ h3 {
   padding: 0;
   width: 95%;
   padding: 0;
-  border-radius: 0px;
+  border-radius: 10px;
   margin-top: 5px;
   position: absolute;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: 10px;
   top: 11px;
+  font-family: "Muli", sans-serif;
+  /* border-width: 2px;
+  border-style: solid; */
+  background-color: rgb(236, 154, 236);
 }
 
 /* line 28, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #5DB2FF;
+  color: #615CFD;
 }
 
 /* line 32, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
-.slicknav_menu .slicknav_nav a.active {
-  color: #5DB2FF;
-}
+/* .slicknav_menu .slicknav_nav a.active {
+  color: #615CFD;
+} */
 
 @media (max-width: 767px) {
   /* line 35, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
@@ -814,6 +952,8 @@ h3 {
   top: -36px;
 }
 
+
+
 /* line 55, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav .slicknav_btn .slicknav_icon {
   margin-right: 6px;
@@ -823,6 +963,10 @@ h3 {
   top: -11px;
   right: -5px;
 }
+
+/* .slicknav_menu .slicknav_icon::before {
+  background-color: red;
+} */
 
 @media (max-width: 767px) {
   /* line 12, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */
@@ -2101,7 +2245,7 @@ h3 {
 .about_me .about_large_title {
   font-weight: 800;
   color: #F5F6F7;
-  font-size: 235px;
+  font-size: 210px;
   position: absolute;
   left: 21%;
   top: 0;
@@ -2594,7 +2738,7 @@ h3 {
 /* line 45, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_bradcam.scss */
 .bradcam_area p {
   font-size: 18px;
-  color: #fff;
+  color: #444;
   font-weight: 400;
   text-transform: capitalize;
 }
@@ -3024,9 +3168,13 @@ h3 {
   margin-top: 12px;
 }
 
+.section-padding {
+  padding-top: 120px;
+}
+
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_service.scss */
 .service_area {
-  padding-top: 120px;
+  /* padding-top: 120px; */
   padding-bottom: 120px;
 }
 
@@ -3085,6 +3233,16 @@ h3 {
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 0;
+  min-height: 120px;
+}
+
+.service_area .premio p {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 0;
+  min-height: 50px;
 }
 
 /* line 38, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_service.scss */
@@ -3186,7 +3344,7 @@ h3 {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 180px;
+  /* padding-top: 180px; */
   padding-bottom: 340px;
 }
 
