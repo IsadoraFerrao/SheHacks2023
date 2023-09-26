@@ -17,21 +17,26 @@ $(window).on('scroll', function () {
 
 
 $(document).ready(function(){
+  // mobile_menu
+  var menu = $('ul#navigation');
+  if (menu.length) {
+    if (window.innerWidth <= 767) {
+      // adicionando Inscreva-se no ul versão mobile
+      menu.append($('#inscreva'));
+    }
+    menu.slicknav({
+      prependTo: ".mobile_menu",
+      closedSymbol: '+',
+      openedSymbol:'-'
+    });   
+  }
 
-// mobile_menu
-var menu = $('ul#navigation');
-if(menu.length){
-	menu.slicknav({
-		prependTo: ".mobile_menu",
-		closedSymbol: '+',
-		openedSymbol:'-'
-	});
-};
+  // fechar menu
+  $(document).on('click', 'ul.slicknav_nav li a', function () {
+    menu.slicknav('close');
+  });
+// });
 
-// fechar menu
-$(document).on('click', 'ul.slicknav_nav li a', function () {
-  menu.slicknav('close');
-});
 
 
 // blog-menu

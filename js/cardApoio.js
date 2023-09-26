@@ -25,7 +25,7 @@ function createapoioCards() {
     card.innerHTML = `
         <div class="single_service premio text-center">
           <div class="icon">
-            <img src="${img}" alt="${alt}" style="width:170px;"/>
+            <img src="${img}" alt="${alt}" style="width:170px; height:80px;"/>
           </div>
         </div>
 
